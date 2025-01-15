@@ -7,7 +7,7 @@ import { add } from '../store/cartSlice';
 
 const Product = () => {
 
-    const dispatch = {useDispatch};
+    const dispatch = useDispatch();
     const [products, getProducts]= useState([]);
     useEffect(() => {
         fetch('https://fakestoreapi.com/products')
